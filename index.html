@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Caio Lemos Peixoto Martins" />
+    <meta name="description" content="Calculadora no padrão Apple" />
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <title>Calculadora de iPhone</title>
+</head>
+
+<body>
+    <div id="corpo">
+        <div id="header"><pre> </pre></div>
+        <div id="linha"><pre> </pre></div>
+        <div id="resultado"></div>
+        <div id="linha1" class="botoes">
+            <button id="limpar" class="item-botao" onclick="clean()">AC</button>
+            <button id="troca_sinal" class="item-botao" onclick="operator('')"><sup>+</sup><div id="barra">/</div><sub>-</sub></button>
+            <button id="porcentagem" class="item-botao" onclick="operator('%')">%</button>
+            <button id="divisao" class="item-botao" onclick="operator('&divide;')">&divide;</button>
+        </div>
+        <div id="linha2" class="botoes">
+            <button id="sete" class="item-botao" onclick="insert('7')">7</button>
+            <button id="oito" class="item-botao" onclick="insert('8')">8</button>
+            <button id="nove" class="item-botao" onclick="insert('9')">9</button>
+            <button id="multiplicacao" class="item-botao" onclick="operator('&times;')">&times;</button>
+        </div>
+        <div id="linha3" class="botoes">
+            <button id="quatro" class="item-botao" onclick="insert('4')">4</button>
+            <button id="cinco" class="item-botao" onclick="insert('5')">5</button>
+            <button id="seis" class="item-botao" onclick="insert('6')">6</button>
+            <button id="subtracao" class="item-botao" onclick="operator('&minus;')">&minus;</button>
+        </div>
+        <div id="linha4" class="botoes">
+            <button id="um" class="item-botao" onclick="insert('1')">1</button>
+            <button id="dois" class="item-botao" onclick="insert('2')">2</button>
+            <button id="tres" class="item-botao" onclick="insert('3')">3</button>
+            <button id="adicao" class="item-botao" onclick="operator('&plus;')">&plus;</button>
+        </div>
+        <div id="linha5" class="botoes">
+            <input type="button" id="maislargo" class="item-botao" value="0" onclick="insert('0')">
+            <button id="virgula" class="item-botao" onclick="operator(',')">,</button>
+            <button id="igual" class="item-botao" onclick="calcular()">=</button>
+        </div>
+        <div id="foot"><pre> </pre></div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

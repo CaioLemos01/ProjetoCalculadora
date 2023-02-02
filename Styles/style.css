@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+:root {
+    --cor-fundo-numeros: #323433;
+    --cor-fundo-operadores: #f79e13;
+    --cor-fundo-operadores1: #f7a013d2;    
+    --cor-numeros-operadores: #edefee;
+    --cor-fundo-exclusiva: #a7a7a7;
+    --cor-mouse: rgb(107, 107, 107);
+    --cor-botao-ativo: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background-color: #595959;
+}
+
+#corpo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 90%;
+    width: 22%;
+    background-color: black;
+    border-radius: 40px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.295);
+}
+
+#header {
+    position: absolute;
+    top: -2%;
+    left: 33%;
+    width: 36%;
+    height: 27px;
+    margin: auto;
+    
+    background-color: #595959;
+    border-radius: 10px;
+}
+
+#linha { 
+    position: absolute;
+    left: 30%;
+    border-top: .1px solid black;
+    width: 50%;
+}
+
+#resultado {
+    color: var(--cor-numeros-operadores);
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 58px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+
+#limpar {
+    background-color: var(--cor-fundo-exclusiva);
+}
+
+#limpar:hover {
+    background-color: var(--cor-mouse);
+}
+
+#troca_sinal {
+    background-color: var(--cor-fundo-exclusiva);
+}
+
+#troca_sinal:hover {
+    background-color: var(--cor-mouse);
+}
+
+#porcentagem {
+    background-color: var(--cor-fundo-exclusiva);
+}
+
+#porcentagem:hover {
+    background-color: var(--cor-mouse);
+}
+
+#divisao {
+    background-color: var(--cor-fundo-operadores);
+}
+
+#divisao:hover {
+    background-color: var(--cor-fundo-operadores1);
+}
+
+#multiplicacao {
+    background-color: var(--cor-fundo-operadores);
+}
+
+#multiplicacao:hover {
+    background-color: var(--cor-fundo-operadores1);
+}
+
+#subtracao {
+    background-color: var(--cor-fundo-operadores);
+}
+
+#subtracao:hover {
+    background-color: var(--cor-fundo-operadores1);
+}
+
+#adicao {
+    background-color: var(--cor-fundo-operadores);
+}
+
+#adicao:hover {
+    background-color: var(--cor-fundo-operadores1);
+}
+
+#igual {
+    background-color: var(--cor-fundo-operadores);
+}
+
+#igual:hover {
+    background-color: var(--cor-fundo-operadores1);
+}
+
+.item-botao {
+    background-color: var(--cor-fundo-numeros);
+    color: var(--cor-numeros-operadores);
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 90px;
+}
+
+.item-botao:hover {
+    cursor: pointer;
+    background-color: var(--cor-mouse);
+}
+
+.item-botao:active {
+    color: var(--cor-botao-ativo);
+}
+
+.botoes {
+    text-align: center;
+}
+
+#linha1 {
+    position: absolute;
+    top: 34%;
+    left: 10%;
+}
+
+#linha2 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+#linha3 {
+    position: absolute;
+    top: 56%;
+    left: 10%;
+}
+
+#linha4 {
+    position: absolute;
+    top: 67%;
+    left: 10%;
+}
+
+#linha5 {
+    position: absolute;
+    top: 78%;
+    left: 10%;
+}
+
+#foot {
+    position: absolute;
+    top: 96%;
+    left: 30%;
+    width: 36%;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#maislargo {
+    width: 124px;
+    height: 60px;
+    text-align: left;
+    padding-left: 22px;
+}
+
+
+sup {
+    position: relative;
+    top: 10%;
+    left: -14%;
+    font-size: 1em;
+}
+
+sub {
+    position: relative;
+    top: -140%;
+    left: 14%;
+    font-size: 1.2em;
+}
+
+#barra {
+    position: relative;
+    top: -64%;
+    font-size: 1.2em;
+    transform: rotate(16deg);
+}
